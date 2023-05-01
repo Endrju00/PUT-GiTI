@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
 }
@@ -41,7 +40,6 @@ header {
         margin: 0 auto;
         max-width: 80%;
         padding: 0 0;
-        background-color: red;
     }
 }
 
@@ -50,7 +48,6 @@ header {
         margin: 0 auto;
         max-width: 95%;
         padding: 0 0;
-        background-color: red;
     }
 }
 
@@ -117,7 +114,7 @@ nav {
 }
 
 .nav_bottom_links {
-    min-width: 50%;
+    min-width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +122,7 @@ nav {
 
 .hamburger{
     display: none;
-    height: 60px;
+    height: 45px;
     padding: 10px;
 }
 
@@ -137,4 +134,30 @@ nav {
     .nav_bottom_links {
         display: none;
     }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #012d5c;
+}
+
+.footer_content {
+    min-width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 50px;
+    margin: 50px;
+}
+
+footer ul, footer li {
+    color: white;
 }
