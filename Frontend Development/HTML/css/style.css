@@ -6,15 +6,7 @@
     padding: 0;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-}
-
-
-.verticalLine {
-    margin-left: 5px;
-    margin-right: 5px;
-    border-left: 1px solid navy;
-    height: 20px;
-    display: inline-block;
+    list-style: none;
 }
 
 #boxes {
@@ -25,7 +17,6 @@
 }
 
 .box {
-    list-style: none;
     float: left;
     width: 30px;
     height: 30px;
@@ -40,41 +31,41 @@
 }
 
 header {
-    max-width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0px 10%;
+    max-width: 60%;
+    padding: 0 0;
 }
 
-nav li a {
+@media screen and (max-width: 1350px) {
+    header {
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 0 0;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        margin: 0 auto;
+        max-width: 95%;
+        padding: 0 0;
+        background-color: red;
+    }
+}
+
+header li a {
+    display: inline-block;
     transition: all 0.3s ease 0s;
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
     color: navy;
+    padding: 0 5px;
 }
 
-nav li a:hover {
+header li a:hover {
     color: skyblue;
-}
-
-.logo {
-    cursor: pointer;
-    height: 55px;
-}
-
-.nav_bottom_links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_bottom_links > li {
-    display: inline-block;
-    padding: 0px 5px;
 }
 
 .social_icon {
@@ -82,13 +73,7 @@ nav li a:hover {
     height: 20px;
 }
 
-.socials {
-    margin-right: 20px;
-}
-
 .nav_top_links {
-    max-width: 80%;
-    list-style: none;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -96,5 +81,60 @@ nav li a:hover {
 
 .nav_top_links li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.verticalLine {
+    border-left: 1px solid navy;
+    height: 20px;
+    display: inline-block;
+}
+
+.logo {
+    cursor: pointer;
+    height: 55px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nav_bottom_links {
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+    height: 60px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    .hamburger{
+        display: flex;
+    }
+
+    .nav_bottom_links {
+        display: none;
+    }
 }
