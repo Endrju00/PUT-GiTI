@@ -8,6 +8,17 @@
     list-style: none;
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 150px;
+}
+
 #boxes {
     list-style: none;
     display: flex;
@@ -15,31 +26,30 @@
     align-items: center;
 }
 
-.box {
+.box_decoration {
     float: left;
     width: 30px;
     height: 30px;
 }
 
-.red_box {
+.red {
     background-color: red;
 }
 
-.navy_box {
+.navy {
     background-color: navy;
 }
 
 header {
     margin: 0 auto;
     max-width: 60%;
-    padding: 0 0;
+    padding-bottom: 32px;
 }
 
 @media screen and (max-width: 1350px) {
     header {
         margin: 0 auto;
         max-width: 80%;
-        padding: 0 0;
     }
 }
 
@@ -47,7 +57,6 @@ header {
     header {
         margin: 0 auto;
         max-width: 95%;
-        padding: 0 0;
     }
 }
 
@@ -122,7 +131,7 @@ nav {
 
 .hamburger{
     display: none;
-    height: 45px;
+    height: 35px;
     padding: 10px;
 }
 
@@ -136,10 +145,66 @@ nav {
     }
 }
 
+.cards {
+    margin: 0 auto;
+    display: grid;
+    max-width: 100vw;
+}
+
+.cards {
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.card {
+    background-color: grey;
+    width: 30vw;
+    height: 30vw;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.banner_image {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.card_image {
+    max-width: 30vw;
+}
+
+.card_edge_image {
+    max-width: 20vw;
+}
+
+.edge-card {
+    width: 20vw;
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .card_image {
+        max-width: 50vw;
+    }
+
+    .edge-card {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
 footer {
     position: absolute;
     bottom: 0;
-    min-width: 100vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,4 +225,21 @@ footer {
 
 footer ul, footer li {
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        height: 40px;
+    }
+
+    .footer_logo {
+        height: 30px;
+        margin: 30px;
+    }
+
+    .footer_content {
+        min-width: 100%;
+        font-size: 10px;
+
+    }
 }
