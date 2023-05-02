@@ -12,7 +12,7 @@ var path = require("path");
 var port = 4000;
 
 // configuration ===============================================================
-mongoose.connect("mongodb://ja:dupadupa12@ds119072.mlab.com:19072/lol", {
+mongoose.connect("mongodb+srv://andrzejkapczynski:Haslodomongo1234@frontenddevelopment.c8hvjmb.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
 }); // connect to mongoDB database on modulus.iox 
 
