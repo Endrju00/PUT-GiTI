@@ -6,17 +6,35 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
     const submitTodoHandler = (event) => {
         event.preventDefault();
         if (inputText !== "") {
-            setTodos([
-                ...todos,
-                { text: inputText, completed: false, id: Math.random() * 1000 }
-            ]);
-            setInputText("");
+            createTodo();
         }
         document.getElementById("taskInput").focus()
     }
 
     const statusHandler = (event) => {
         setStatus(event.target.value);
+    }
+
+    function createTodo() {
+        fetch('http://localhost:4000/api/todos/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text: inputText, done: false }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                setTodos([
+                    ...todos,
+                    { text: inputText, done: false, _id: data._id }
+                ]);
+                setInputText("");
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     }
 
     return (
@@ -28,7 +46,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
             <div className="select">
                 <select onChange={statusHandler} name="todos" className="filter-todo">
                     <option value="all">All</option>
-                    <option value="completed">Completed</option>
+                    <option value="done">Completed</option>
                     <option value="uncompleted">Uncompleted</option>
                 </select>
             </div>

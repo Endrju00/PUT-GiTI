@@ -9,15 +9,26 @@ function App() {
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
 
+  // Get data from server
+  async function getTodos() {
+    const response = await fetch('http://localhost:4000/api/todos/');
+    const data = await response.json();
+    setTodos(data);
+  }
+
+  useEffect(() => {
+    getTodos();
+  }, []);
+
   // Filter on change todos and status and save data
   useEffect(() => {
     const filterHandler = () => {
       switch (status) {
-        case "completed":
-          setFilteredTodos(todos.filter(todo => todo.completed === true));
+        case "done":
+          setFilteredTodos(todos.filter(todo => todo.done === true));
           break;
         case "uncompleted":
-          setFilteredTodos(todos.filter(todo => todo.completed === false));
+          setFilteredTodos(todos.filter(todo => todo.done === false));
           break
         default:
           setFilteredTodos(todos);
