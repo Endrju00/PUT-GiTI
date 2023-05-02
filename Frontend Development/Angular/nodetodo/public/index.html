@@ -71,23 +71,11 @@
                                                         <!-- LOOP OVER THE TODOS IN $scope.todos -->
                                                         <div class="checkbox" ng-repeat="todo in todos">
                                                                 <label>
-                                                                        <input type="checkbox" ng-click="deleteTodo(todo._id)"
-                                                                        ng-model="todo.done">
-                                                                        {{ todo.text }}
-                                                                </label>
-                                                        </div>
-
-                                                </div>
-                                        </div>
-                                        <!-- DELETED LIST -->
-                                        <div id="todo-list" class="row">
-                                                <div class="col-sm-4 col-sm-offset-4">
-                                                        <!-- LOOP OVER THE TODOS IN $scope.todos -->
-                                                        <div class="checkbox" ng-repeat="del in deleted">
-                                                                <label>
-                                                                        <input type="checkbox" ng-click="updateTodo(del._id)"
-                                                                        ng-model="del.done" >
-                                                                        <s>{{ del.text }}</s>
+                                                                        <input type="checkbox" ng-click="updateTodo(todo._id)" ng-model="todo.done">
+                                                                        <s ng-show="todo.done">{{ todo.text }}</s>
+                                                                        <span ng-show="!todo.done">{{ todo.text }}</span>
+                                                                        <input class="btn btn-danger btn-sm" type="button" ng-click="deleteTodo(todo._id)"
+                                                                        value="Delete">
                                                                 </label>
                                                         </div>
 
@@ -100,10 +88,12 @@
                                                 <div class="col-sm-4 col-sm-offset-4">
                                                         <!-- LOOP OVER THE TODOS IN $scope.todos -->
                                                         <div class="checkbox" ng-repeat="todo in todos">
-                                                                <label>
-                                                                        <input type="checkbox" ng-click="deleteTodo(todo._id)"
+                                                                <label ng-show="!todo.done">
+                                                                        <input type="checkbox" ng-click="updateTodo(todo._id)"
                                                                         ng-model="todo.done">
                                                                         {{ todo.text }}
+                                                                        <input class="btn btn-danger btn-sm" type="button" ng-click="deleteTodo(todo._id)"
+                                                                        value="Delete">
                                                                 </label>
                                                         </div>
 
@@ -111,15 +101,17 @@
                                         </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                        <!-- DELETED LIST -->
+                                        <!-- DONE LIST -->
                                         <div id="todo-list" class="row">
                                                 <div class="col-sm-4 col-sm-offset-4">
                                                         <!-- LOOP OVER THE TODOS IN $scope.todos -->
-                                                        <div class="checkbox" ng-repeat="del in deleted">
-                                                                <label>
-                                                                        <input type="checkbox" ng-click="updateTodo(del._id)"
-                                                                        ng-model="del.done" >
-                                                                        <s>{{ del.text }}</s>
+                                                        <div class="checkbox" ng-repeat="todo in todos">
+                                                                <label ng-show="todo.done">
+                                                                        <input type="checkbox" ng-click="updateTodo(todo._id)"
+                                                                        ng-model="todo.done">
+                                                                        <s>{{ todo.text }}</s>
+                                                                        <input class="btn btn-danger btn-sm" type="button" ng-click="deleteTodo(todo._id)"
+                                                                        value="Delete">
                                                                 </label>
                                                         </div>
 
