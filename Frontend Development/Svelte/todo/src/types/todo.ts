@@ -1,5 +1,7 @@
 export interface ITodo {
-    _id: number;
+    _id: string;
     text: string;
     done: boolean;
 }
+
+export type FiltersType = 'all' | 'completed' | 'active';
