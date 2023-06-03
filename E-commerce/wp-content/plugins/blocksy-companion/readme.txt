@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.8.85
+Stable tag: 1.8.90
 
 == Description ==
 
@@ -23,6 +23,21 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+1.8.90: 2023-06-03
+- Improvement: Proper detection of Blocksy theme in customizer
+
+1.8.89: 2023-06-01
+- Improvement: Better minimal theme version check flow
+
+1.8.88: 2023-05-25
+- Fix: Socials widget label issue
+
+1.8.87: 2023-05-18
+- Improvement: Starter site custom CSS avoid clashes with Elementor default Kit
+
+1.8.86: 2023-05-11
+- Improvement: Account  Show Password icon does not work on WooCommerce pages
+
 1.8.85: 2023-05-04
 - Improvement: Add autocomplete attribute to account modal input fields
 

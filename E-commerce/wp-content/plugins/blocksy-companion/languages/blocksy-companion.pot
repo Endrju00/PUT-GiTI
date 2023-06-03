@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-04 20:53+0000\n"
+"POT-Creation-Date: 2023-06-03 09:33+0000\n"
 "Project-Id-Version: undefined\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
@@ -32,12 +32,16 @@ msgid ""
 "version, the plugin is currently NOT RUNNING."
 msgstr ""
 
-#: framework/dashboard.php:282, framework/dashboard.php:283,
+#: framework/dashboard.php:34
+msgid "Dashboard"
+msgstr ""
+
+#: framework/dashboard.php:338, framework/dashboard.php:339,
 #: framework/extensions/product-reviews/extension.php:619
 msgid "Blocksy"
 msgstr ""
 
-#: framework/dashboard.php:328
+#: framework/dashboard.php:383
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
@@ -131,73 +135,73 @@ msgid ""
 "a wishlits page."
 msgstr ""
 
-#: framework/theme-integration.php:408,
+#: framework/theme-integration.php:379,
 #: framework/extensions/widgets/widgets/ct-facebook/options.php:16,
 #: framework/extensions/widgets/widgets/ct-facebook/view.php:12,
 #: framework/extensions/widgets/widgets/ct-facebook/widget.php:13
 msgid "Facebook"
 msgstr ""
 
-#: framework/theme-integration.php:409
+#: framework/theme-integration.php:380
 msgid "Twitter"
 msgstr ""
 
-#: framework/theme-integration.php:410
+#: framework/theme-integration.php:381
 msgid "LinkedIn"
 msgstr ""
 
-#: framework/theme-integration.php:411
+#: framework/theme-integration.php:382
 msgid "Dribbble"
 msgstr ""
 
-#: framework/theme-integration.php:412
+#: framework/theme-integration.php:383
 msgid "Instagram"
 msgstr ""
 
-#: framework/theme-integration.php:413
+#: framework/theme-integration.php:384
 msgid "Pinterest"
 msgstr ""
 
-#: framework/theme-integration.php:414
+#: framework/theme-integration.php:385
 msgid "WordPress"
 msgstr ""
 
-#: framework/theme-integration.php:415
+#: framework/theme-integration.php:386
 msgid "GitHub"
 msgstr ""
 
-#: framework/theme-integration.php:416,
+#: framework/theme-integration.php:387,
 #: framework/extensions/widgets/widgets/ct-contact-info/options.php:497,
 #: framework/extensions/widgets/widgets/ct-socials/options.php:100,
 #: framework/premium/features/content-blocks/options/archive.php:47
 msgid "Medium"
 msgstr ""
 
-#: framework/theme-integration.php:417
+#: framework/theme-integration.php:388
 msgid "YouTube"
 msgstr ""
 
-#: framework/theme-integration.php:418
+#: framework/theme-integration.php:389
 msgid "Vimeo"
 msgstr ""
 
-#: framework/theme-integration.php:419
+#: framework/theme-integration.php:390
 msgid "VKontakte"
 msgstr ""
 
-#: framework/theme-integration.php:420
+#: framework/theme-integration.php:391
 msgid "Odnoklassniki"
 msgstr ""
 
-#: framework/theme-integration.php:421
+#: framework/theme-integration.php:392
 msgid "TikTok"
 msgstr ""
 
-#: framework/theme-integration.php:497
+#: framework/theme-integration.php:468
 msgid "Companion"
 msgstr ""
 
-#: framework/theme-integration.php:515 static/js/screens/SiteExport.js:111
+#: framework/theme-integration.php:486 static/js/screens/SiteExport.js:111
 msgid "PRO"
 msgstr ""
 
@@ -1005,7 +1009,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:54,
 #: framework/premium/extensions/shortcuts/customizer.php:250,
 #: framework/premium/extensions/shortcuts/customizer.php:276,
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:381,
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:385,
 #: framework/premium/features/content-blocks/options/archive.php:48
 msgid "Custom"
 msgstr ""
@@ -1765,21 +1769,21 @@ msgid ""
 "Posts are the choices available."
 msgstr ""
 
-#: framework/features/header/account-modal.php:41
+#: framework/features/header/account-modal.php:50
 msgid "Close account modal"
 msgstr ""
 
-#: framework/features/header/account-modal.php:53,
+#: framework/features/header/account-modal.php:62,
 #: framework/features/header/items/account/options.php:631,
 #: framework/features/header/items/account/views/logout.php:8
 msgid "Login"
 msgstr ""
 
-#: framework/features/header/account-modal.php:57
+#: framework/features/header/account-modal.php:66
 msgid "Sign Up"
 msgstr ""
 
-#: framework/features/header/account-modal.php:76
+#: framework/features/header/account-modal.php:85
 msgid "Back to login"
 msgstr ""
 
@@ -1980,7 +1984,7 @@ msgstr ""
 #: framework/features/header/items/account/options.php:192,
 #: framework/features/header/items/account/options.php:407,
 #: framework/features/header/items/account/options.php:438,
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:457,
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:461,
 #: framework/premium/extensions/post-types-extra/includes/estimated-read-time.php:18,
 #: framework/premium/extensions/woocommerce-extra/header-items/wish-list/options.php:28,
 #: framework/premium/features/premium-header/items/contacts/options.php:65,
@@ -3436,7 +3440,7 @@ msgid "After related posts"
 msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:411,
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:469
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:473
 msgid "Before"
 msgstr ""
 
@@ -3446,7 +3450,7 @@ msgid "Loop"
 msgstr ""
 
 #: framework/premium/features/content-blocks/hooks-manager.php:418,
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:480
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:484
 msgid "After"
 msgstr ""
 
@@ -4447,38 +4451,38 @@ msgstr ""
 msgid "Element Visibility"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:419
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:423
 msgid "You have no %s fields declared for this custom post type."
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:431,
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:914,
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:925
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:435,
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:918,
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:929
 msgid "Field"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:443,
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:447,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:60
 msgid "Label"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:492
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:496
 msgid "Fallback"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:504
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:508
 msgid "%s Field"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:898
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:902
 msgid "Custom Field"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:912
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:916
 msgid "%s %s Font"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:923
+#: framework/premium/extensions/post-types-extra/includes/dynamic-data.php:927
 msgid "%s %s Color"
 msgstr ""
 
@@ -4487,7 +4491,7 @@ msgstr ""
 msgid "Read Time"
 msgstr ""
 
-#: framework/premium/extensions/post-types-extra/includes/estimated-read-time.php:134
+#: framework/premium/extensions/post-types-extra/includes/estimated-read-time.php:136
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] ""
@@ -5206,7 +5210,7 @@ msgstr ""
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker.js:14
 #: framework/extensions/newsletter-subscribe/admin-static/js/ListPicker/Implementation.js:63
 #: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:213
-#: static/js/dashboard-no-theme.js:46 static/js/screens/SiteExport.js:170
+#: static/js/dashboard/NoTheme.js:62 static/js/screens/SiteExport.js:170
 msgid "Loading..."
 msgstr ""
 
@@ -5971,33 +5975,54 @@ msgstr ""
 msgid "%s System"
 msgstr ""
 
-#: static/js/dashboard-no-theme.js:16
-msgid "Action Required - Install Blocksy Theme"
-msgstr ""
-
-#: static/js/dashboard-no-theme.js:19
-msgid ""
-"Blocksy Companion is the complementary plugin to Blocksy theme. It adds a "
-"bunch of great features to the theme and acts as an unlocker for the Blocksy "
-"Pro package."
-msgstr ""
-
-#: static/js/dashboard-no-theme.js:23
-msgid ""
-"In order to take full advantage of all features it has to offer - please "
-"install and activate the Blocksy theme also."
-msgstr ""
-
-#: static/js/dashboard-no-theme.js:47
-msgid "Install and activate the Blocksy theme"
-msgstr ""
-
 #: static/js/dashboard.js:29
 msgid "Starter Sites"
 msgstr ""
 
 #: static/js/dashboard.js:41
 msgid "Extensions"
+msgstr ""
+
+#: static/js/dashboard/NoTheme.js:16
+msgid "Action Required - Install Blocksy Theme"
+msgstr ""
+
+#: static/js/dashboard/NoTheme.js:22
+msgid ""
+"Blocksy Companion is the complementary plugin to Blocksy theme. It adds a "
+"bunch of great features to the theme and acts as an unlocker for the Blocksy "
+"Pro package."
+msgstr ""
+
+#: static/js/dashboard/NoTheme.js:29
+msgid ""
+"In order to take full advantage of all features it has to offer - please "
+"install and activate the Blocksy theme also."
+msgstr ""
+
+#: static/js/dashboard/NoTheme.js:63
+msgid "Install and activate the Blocksy theme"
+msgstr ""
+
+#: static/js/dashboard/VersionMismatch.js:16
+msgid "Action Required - Blocksy Theme and Companion version mismatch"
+msgstr ""
+
+#: static/js/dashboard/VersionMismatch.js:22
+msgid ""
+"We detected that you are using an outdated version of Blocksy Theme. Please "
+"update it to the latest version."
+msgstr ""
+
+#: static/js/dashboard/VersionMismatch.js:29
+msgid ""
+"In order to take full advantage of all features it has to offer - please "
+"install and activate the latest versions of both Blocksy theme and Blocksy "
+"Companion plugin."
+msgstr ""
+
+#: static/js/dashboard/VersionMismatch.js:41
+msgid "Update Now"
 msgstr ""
 
 #: static/js/header/EditConditions.js:107

@@ -186,6 +186,8 @@ class DynamicCss {
 			'css'   => 'blocksy/css'
 		);
 
+		$theme_paths = [];
+
 		foreach($folders_in_uploads as $folder => $path) {
 			// Server path.
 			$theme_paths[
@@ -200,7 +202,7 @@ class DynamicCss {
 
 		// Custom css file.
 
-		if (! $this->has_direct_access()) {
+		if (! $this->has_direct_access($theme_paths['css_path'])) {
 			return false;
 		}
 
@@ -224,7 +226,7 @@ class DynamicCss {
 		return $theme_paths;
 	}
 
-	public function has_direct_access( $context = null ) {
+	public function has_direct_access($context = null) {
 		require_once ABSPATH . 'wp-admin/includes/file.php';
 		WP_Filesystem();
 

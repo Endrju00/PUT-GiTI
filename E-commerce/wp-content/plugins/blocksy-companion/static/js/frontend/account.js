@@ -186,6 +186,14 @@ export const handleAccountModal = (el) => {
 		},
 		true
 	)
+	if (el.querySelectorAll('.show-password-input + .show-password-input')) {
+		el.querySelectorAll(
+			'.show-password-input + .show-password-input'
+		).forEach((el) => {
+			el.remove()
+		})
+	}
+
 	;[...el.querySelectorAll('.show-password-input')].map((eye) => {
 		eye.addEventListener('click', (e) => {
 			eye.previousElementSibling.type =

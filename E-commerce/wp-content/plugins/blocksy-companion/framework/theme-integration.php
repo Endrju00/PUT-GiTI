@@ -361,35 +361,6 @@ class ThemeIntegration {
 			]);
 		});
 
-		add_filter(
-			'blocksy:dashboard:redirect-after-activation',
-			function ($url) {
-				return add_query_arg(
-					'page',
-					'ct-dashboard',
-					admin_url('admin.php')
-				);
-			}
-		);
-
-		add_filter(
-			'blocksy_add_menu_page',
-			function ($res, $options) {
-				add_menu_page(
-					$options['title'],
-					$options['menu-title'],
-					$options['permision'],
-					$options['top-level-handle'],
-					$options['callback'],
-					$options['icon-url'],
-					2
-				);
-
-				return true;
-			},
-			10, 2
-		);
-
 		add_action('rest_api_init', function () {
 			return;
 

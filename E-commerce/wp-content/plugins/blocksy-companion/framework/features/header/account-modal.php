@@ -4,15 +4,24 @@ if (! isset($current_url)) {
 	$current_url = home_url();
 }
 
-$users_can_register = get_option('users_can_register');
+$users_can_register = null;
+
+if (get_option('users_can_register')) {
+	$users_can_register = 'wp';
+}
 
 if (
 	function_exists('is_product')
 	&&
 	get_option('woocommerce_enable_myaccount_registration') === 'yes'
 ) {
-	$users_can_register = true;
+	$users_can_register = 'woocommerce';
 }
+
+$users_can_register = apply_filters(
+	'blocksy:account:register:strategy',
+	$users_can_register
+);
 
 $form_views = [
 	'login' => '',
