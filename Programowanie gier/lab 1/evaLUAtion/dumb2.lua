@@ -2,7 +2,7 @@
 
 function dumb2whatTo( agent, actorKnowledge, time)
    
-end
+end;
 
 function dumb2onStart( agent, actorKnowledge, time)
 
