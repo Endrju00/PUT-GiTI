@@ -1,8 +1,4 @@
-bot ms  1 0 0 man.staff.
-bot sc:qualify.lua  1 410 400 man.staff.
-bot sc:qualify.lua   1 420 400 man.staff.
-bot sc:qualify.lua   1 430 400 man.staff.
-
+Lynx            ms                  1   0   0   man.staff.
 glitchinator    sc:glitchinator.lua 2   40  40  skeleton.bow.
 buggyguard	    sc:buggyguard.lua	2	50	50	skeleton.bow.
 oopsieguard     sc:oopsieguard.lua  2   60  60  skeleton.bow.
